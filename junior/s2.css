@@ -1,0 +1,86 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+    margin: 0;
+    background-color: white;
+}
+
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bx{
+    margin: 20px auto;
+}
+
+.hd .hd-3{
+    color: rgba(51, 15, 211, 0.96);
+    font-size: 30px;
+    text-align: center;
+    font-weight: 1500;
+}
+
+.hd pre{
+    margin: 5px 640px;
+    color: rgba(51, 15, 211, 0.96);
+    font-size: 125%;
+    font-weight: 125%;
+}
+.s-1{
+    margin-top: 50px;
+
+
+}
+
+.bx-1{
+    text-align: center;
+    padding: 5px 30px;
+    padding-top: -5px;
+    border: 1px solid whitesmoke;
+    
+}
+
+.und{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(201, 189, 189, 0.378);
+    margin-top: 20px
+   
+}
+.blue{
+    background-color: rgba(16, 16, 243, 0.467);
+    color: white;
+    font-weight: 700;
+
+}
+.btn{
+    color: white;
+    font-size: 20;
+    padding: 0px 40px;
+    border: 1px solid rgba(16, 16, 243, 0.467);
+    border-radius: 5px;
+}
+
+.bx-2 {
+    text-align: center;
+    padding: 80px 50px;
+    border: 1px solid rgba(51, 15, 211, 0.96);
+    margin-top:-12.5px;
+    
+}
+
+.white{
+    background-color: whitesmoke;
+    color: rgba(51, 15, 211, 0.96);
+    font-weight: 700;
+    font-size: 20;
+    padding: 0px 40px;
+    border: 1px solid rgba(16, 16, 243, 0.467);
+    border-radius: 5px;
+
+}

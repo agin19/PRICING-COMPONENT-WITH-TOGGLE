@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="s2.css">
+  
+  <title>Skill Safari | Pricing Component With Toggle</title>
+
+    <script>
+        $(document).ready(function(){
+        $("#tog").click(function(){
+            $(this).find('i').toggleClass('fa-toggle-off fa-toggle-on');
+
+            var onet = $('#one').text();
+            var twot = $('#two').text();
+            var threet = $('#three').text();
+
+            var s = $('#one');
+            $('#one').text('$19.99');
+            s.text(onet);
+            s.html(s.text() == '$19.99' ? '$199.99' : '$19.99');
+
+            var t = $('#two');
+            $('#two').text('$24.99');
+            t.text(twot);
+            t.html(t.text() == '$24.99' ? '$249.99' : '$24.99');
+
+            var u = $('#three');
+            $('#three').text('$39.99');
+            u.text(threet);
+            u.html(u.text() == '$39.99' ? '$399.99' : '$39.99');
+        });
+        });
+    </script> 
+
+</head>
+<body>
+
+    <header class="hd">
+        <h3 class="hd-3">Our Pricing</h3>
+        <pre id="tog">Annually           <i class="fa fa-toggle-off" aria-hidden="true"></i>          Monthly</pre>
+    </header>
+    <section class="s-1">
+        <div class="container">
+            <div class="row">
+                <div class="bx row">
+                    <div class="bx-1">
+                        <p>Basic</p>
+                        <!--<h1 id="one" class="und"><i class="fa fa-usd" aria-hidden="true"></i>199.99</h1>-->
+                        <h1 id="one" class="und">$199.99</h1>
+                        <p class="und">500 GB Storage</p>
+                        <p class="und">2 Users Allowed</p>
+                        <p class="und">Send up to 3 GB</p>
+                        <button class="blue und btn">LEARN MORE</button>
+
+                   </div>
+                    <div class="bx-2 blue">
+                        <p>Professional</p>
+                        <!--<h1 id="two" class="und"><i class="fa fa-usd" aria-hidden="true"></i>249.99</h1>-->
+                        <h1 id="two" class="und">$249.99</h1>
+                        <p class="und">1 TB Storage</p>
+                        <p class="und">5 Users Allowed</p>
+                        <p class="und">Send up to 10 GB</p>
+                        <button class="white">LEARN MORE</button>    
+                    </div>
+                    <div class="bx-1">
+                        <p>Master</p>
+                        <!--<h1 id="three" class="und"><i class="fa fa-usd" aria-hidden="true"></i>399.99</h1>-->
+                        <h1 id="three" class="und">$399.99</h1>
+                        <p class="und">2 TB Storage</p>
+                        <p class="und">10 Users Allowed</p>
+                        <p class="und">Send up to 20 GB</p>
+                        <button class="blue und btn">LEARN MORE</button>
+
+                    
+            
+                </div>
+        
+        </div>   
+    </section>
+  
+</body>
+</html>
